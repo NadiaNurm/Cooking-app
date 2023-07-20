@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #ecdadf;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cooking.AllReceptsController">
+   <children>
+      <Label layoutX="520.0" layoutY="40.0" prefHeight="17.0" prefWidth="359.0" text="Рецепты">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <TableView fx:id="allRecTable" layoutX="218.0" layoutY="124.0" prefHeight="537.0" prefWidth="679.0">
+        <columns>
+          <TableColumn fx:id="allRecNameCol" prefWidth="168.0" text="Название" />
+          <TableColumn fx:id="allRecTimeCol" prefWidth="188.0" text="Время" />
+            <TableColumn fx:id="allRecImageCol" prefWidth="504.0" text="Изображение" />
+            <TableColumn fx:id="allRecId" minWidth="0.0" prefWidth="0.0" text="id" />
+        </columns>
+      </TableView>
+      <Label fx:id="allRecInfo" layoutX="417.0" layoutY="695.0" prefHeight="29.0" prefWidth="247.0" />
+      <Button fx:id="allRecBack" layoutX="1191.0" layoutY="47.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Back" />
+   </children>
+</AnchorPane>
